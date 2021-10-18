@@ -1,0 +1,1584 @@
+2021-10-14 21:43:33,410 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:44:33,470 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:45:33,534 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:46:33,594 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:47:33,652 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:48:33,714 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:49:33,775 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:50:33,836 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:51:33,898 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:52:33,960 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:53:34,021 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:54:34,078 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:55:34,137 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:56:34,195 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:57:34,256 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:58:34,321 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 21:59:34,382 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:00:34,443 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:01:34,501 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:02:34,562 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:03:34,620 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:04:34,681 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:05:34,740 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:06:34,799 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:07:34,860 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:08:34,919 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:09:34,979 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:10:35,035 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:11:35,099 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:12:35,159 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:13:35,216 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:14:35,274 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:15:35,335 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:16:35,391 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:17:35,450 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:18:35,512 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:19:35,569 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:20:35,626 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:21:35,687 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:22:35,746 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:23:35,807 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:24:35,868 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:25:35,929 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:26:35,991 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:27:36,050 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:28:36,107 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:29:36,167 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+2021-10-14 22:30:36,226 ERROR scheduler Exception in Enqueue Events for Site chipo.maeja
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 64, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 106, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 559, in get_single_value
+    `tabSingles` where `doctype`=%s and `field`=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 120, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/database.py", line 73, in connect
+    self._conn = self.get_connection()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 80, in get_connection
+    local_infile=frappe.conf.local_infile
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+

@@ -1,0 +1,12 @@
+{
+ "db_name": "_8dd9fe52669423bc",
+ "db_password": "Lzm1i5Nfy7bkrRqu",
+ "db_type": "mariadb",
+ "developer_mode": 1,
+ "domains": [],
+ "encryption_key": "yyLmzg0LEQh4_zUbX2Km4Z3Y4Ik_rsD-hFVOGCNIic0=",
+ "nginx_port": 8090,
+ "user_type_doctype_limit": {
+  "employee_self_service": 10
+ }
+}
